@@ -8,30 +8,42 @@ nav{
     margin-top:auto;
 }
 */
+.container-1{
+    display: flex;
 
+    
+}
+div.container-1{
+    border:1px #ccc solid;
+    padding:10px;
+}
+.logo1{
+   
+    display: block;
+    margin-left:0%;
+    
+    float:left;
+   
+}
+.titles
+{
+    display:flex;
+    margin-left:30%;
+   
+}
 div{
     width:100%;
     overflow:hidden;
 }
-div.logo1{
-    display: block;
-    margin-left:0%;
-    width:30%;
-    float:left;
-   
-}
-img.profpic1{
-   width:200px;
-}
-div.titles
-{
-    margin-left:30%;
-   
-}
 
+
+.profpic{
+    align-items: flex-start;
+}
 div.profpic{
+
     margin-left: 70%;
-   
+    width: 10%;
    
 }
 img {
