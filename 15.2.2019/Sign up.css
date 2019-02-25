@@ -15,12 +15,13 @@ nav{
 }
 div.container-1{
     border:1px #ccc solid;
-    padding:10px;
+    padding:0%;
 }
 .logo1{
-   
-    display: block;
-    margin-left:0%;
+    margin-top:0%;
+   height:100px;
+    width:100px;
+    margin-left:5%;
     
     float:left;
    
@@ -28,8 +29,15 @@ div.container-1{
 .titles
 {
     display:flex;
-    margin-left:30%;
+    margin-left:10%;
    
+}
+.profpic{
+    align-items: flex-start;
+    margin-left:15%;
+    width:100px;
+    height:100px;
+
 }
 div{
     width:100%;
@@ -37,9 +45,7 @@ div{
 }
 
 
-.profpic{
-    align-items: flex-start;
-}
+
 div.profpic{
 
     margin-left: 70%;
