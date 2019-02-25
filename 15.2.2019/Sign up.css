@@ -17,19 +17,20 @@ div.container-1{
     border:1px #ccc solid;
     padding:10px;
 }
-.logo1{
-   
-    display: block;
+.logo1
+{
+    flex:1;
     margin-left:0%;
-    
-    float:left;
-   
 }
 .titles
 {
+    flex:2;
     display:flex;
     margin-left:30%;
-   
+}
+.SignUp
+{
+    flex:1;
 }
 div{
     width:100%;
@@ -39,6 +40,8 @@ div{
 
 .profpic{
     align-items: flex-start;
+    width: 10%;
+    height:10%;
 }
 div.profpic{
 
