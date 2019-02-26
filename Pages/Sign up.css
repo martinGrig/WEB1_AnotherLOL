@@ -149,7 +149,7 @@ li {
     text-decoration: none;
   }
   .title{
-      color:red;
+    color:red;
   }
   .button{
     -webkit-transition-duration: 0.7s;
@@ -170,4 +170,8 @@ li {
   .button:hover{
       background-color: white;
       color: rgb(68, 68, 68);
+  }
+  a:link{
+      color: rgb(228, 228, 148);
+      text-decoration: none;
   }
