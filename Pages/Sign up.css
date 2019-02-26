@@ -152,10 +152,12 @@ li {
       color:red;
   }
   .button{
+    -webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;
     margin-left: 23%;
-    background-color: rgb(37, 0, 172);
+    background-color: rgb(68, 68, 68);
     border: none;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -164,4 +166,8 @@ li {
     font-weight: bold;
     cursor: pointer;
     border-radius: 20px;
+  }
+  .button:hover{
+      background-color: white;
+      color: rgb(68, 68, 68);
   }
