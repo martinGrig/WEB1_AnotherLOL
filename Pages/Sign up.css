@@ -2,11 +2,13 @@ body
 {
     background-image: linear-gradient(to bottom right, black , rgb(63, 63, 63));
     color:yellow;
-   
+    /*background-image: url("background.png");*/
+    background-repeat: no-repeat;
 }
 a 
 {
     text-decoration: none;
+    color: rgb(240, 240, 140);
 }
 /*
 nav{
@@ -17,6 +19,8 @@ nav{
 @media screen and (max-width: 600px){
     body{
         background-image: linear-gradient(to bottom right, black , rgb(63, 63, 63));
+        /*background-image: url("background.png");*/
+        background-repeat: no-repeat;
     }
 }
 @media screen and (max-width: 600px) {
