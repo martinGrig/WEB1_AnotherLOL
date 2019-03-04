@@ -156,9 +156,9 @@ p {
 }
 
 li :hover {
-    background-color: #333;
-    color:red;
-    border-radius:20px;
+    /*background-color: #333;*/
+    color:white;
+    /*border-radius:20px;*/
     
 
 }
