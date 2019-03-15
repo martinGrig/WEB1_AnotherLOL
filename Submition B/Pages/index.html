@@ -7,9 +7,9 @@
     </head>
 
     <body>
-        <div class="container-1">
-        <a href = "HomePage.html"><img class="logo1" src = "IMAGES/logo.png" alt = "logo"></a>
-        <p><a href = "HomePage.html">ANOTHERLOL</a></p>
+        <div  id ="navbar" class="container-1">
+        <a href = "inxdex.html"><img class="logo1" src = "IMAGES/logo.png" alt = "logo"></a>
+        <p><a href = "index.html">ANOTHERLOL</a></p>
         
         <ul class="titles">
             <li><h3><a href = "ArticlesPage.html">ARTICLES</a></h3></li>
@@ -77,6 +77,19 @@
             <p>I reaaally need those papers</p>
             <img class="card" src = "IMAGES/budgeting.png" alt = "Meme">
         </div>
-       
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
     </body>
 </html>
