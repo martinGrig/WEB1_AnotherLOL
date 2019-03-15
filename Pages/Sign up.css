@@ -33,6 +33,7 @@ nav{
 .container-1{
     
     display: flex;
+   
 }
 div.container-1{
     border:1px #ccc solid;
@@ -280,3 +281,4 @@ label.contact1{
     margin-left:85%;
     margin-top:-40%;
  }
+ 
