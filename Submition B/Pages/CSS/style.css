@@ -117,48 +117,6 @@ div.container-1{
     -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
   
 }
-.email{
-    display: flex;
-    margin-left: 5%;
-    margin-top:-3%;
-}
-.password{
-    display: flex;
-    margin-left: 5%;
-    margin-top:-3%;
-}
-.password2{
-    display: flex;
-    margin-left: 5%;
-    margin-top:-3%;
-}
-.username{
-    display: flex;
-    margin-left: 5%;
-    margin-top:-3%;
-}
-.fullname{
-    display: flex;
-    margin-left: 5%;
-    margin-top:-3%;
-}
-.email1{
-    margin-left:1%;
-}
-.password1{
-    margin-left:-1%
-}
-.reppassword{
-    margin-left:-5%;
-}
-.username1{
-    margin-left: -1%;
-}
-.fullname1{
-    margin-left: -1%;
-}
-
-
 img {
     width: 200px;
     height: auto;
@@ -202,8 +160,8 @@ li {
       color:red;
   }
   .button{
-    -webkit-transition-duration: 0.7s;
-    transition-duration: 0.7s;
+    /*-webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;*/
     margin-left: 23%;
     background-color: rgb(68, 68, 68);
     border: none;
@@ -221,15 +179,11 @@ li {
       background-color: white;
       color: rgb(68, 68, 68);
   }
-label.contact,label.contact1{
+label.contact{
     color:black;
 }
-
 textarea.text{
     margin-left:0px;
-}
-label.contact1{
-    margin-left:-16px;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
