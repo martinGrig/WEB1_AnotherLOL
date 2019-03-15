@@ -87,6 +87,7 @@ div.container-1{
     margin-left:10px;
 }
 
+
 .content{
   width: 100%;
   position: relative;
@@ -95,6 +96,7 @@ div.container-1{
   margin-left:20%;
   margin-top:-10%;
 }
+
 
 .details{
     width: 100%;
@@ -272,3 +274,8 @@ textarea.text{
     background: transparent;
     padding: 0 5px;
  }
+ @media (max-width: 700px) {
+  .navbar {   
+    flex-direction: column;
+  }
+}
