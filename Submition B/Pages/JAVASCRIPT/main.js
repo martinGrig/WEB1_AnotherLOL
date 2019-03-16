@@ -1,43 +1,25 @@
-$('.form').find('input, textarea').on('keyup blur focus', function (e) {
-  
-  var $this = $(this),
-      label = $this.prev('label');
-
-	  if (e.type === 'keyup') {
-			if ($this.val() === '') {
-          label.removeClass('active highlight');
-        } else {
-          label.addClass('active highlight');
-        }
-    } else if (e.type === 'blur') {
-    	if( $this.val() === '' ) {
-    		label.removeClass('active highlight'); 
-			} else {
-		    label.removeClass('highlight');   
-			}   
-    } else if (e.type === 'focus') {
-      
-      if( $this.val() === '' ) {
-    		label.removeClass('highlight'); 
-			} 
-      else if( $this.val() !== '' ) {
-		    label.addClass('highlight');
-			}
+var objPeople = [
+  {
+    username: "sam",
+    password: "codify"
+  },
+  {
+    username: "matt",
+    password: "academy"
+  },
+  {
+    username:"chris",
+    password:"forever"
+  }
+]
+function getInfo(){
+  var username = document.getElementById("username").value
+  var password = document.getElementById("password").value
+  for(i = 0;i < objPeople.length;i++){
+    if(username == objPeople[i].username && password == objPeople[i].password){
+      console.log(username + " is logged in")
+      return
     }
-
-});
-
-$('.tab a').on('click', function (e) {
-  
-  e.preventDefault();
-  
-  $(this).parent().addClass('active');
-  $(this).parent().siblings().removeClass('active');
-  
-  target = $(this).attr('href');
-
-  $('.tab-content > div').not(target).hide();
-  
-  $(target).fadeIn(600);
-  
-});
+  }
+  console.log("incorrect  username  or password")
+}
