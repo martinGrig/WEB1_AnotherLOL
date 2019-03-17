@@ -1,4 +1,4 @@
-function validateForm() {
+function validateForm1() {
   var x = document.forms["signIn"]["emailadress"].value;
   var y = document.forms["signIn"]["password"].value;
   if (x == "") {
