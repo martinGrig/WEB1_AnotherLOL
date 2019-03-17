@@ -71,7 +71,7 @@ function getInfo(){
     
       if (phone.value == "")                           
       { 
-          window.alert("Please enter your telephone number."); 
+          window.alert("Please enter your telephone number.");
           phone.focus(); 
           return false; 
       } 
