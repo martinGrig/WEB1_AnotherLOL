@@ -76,7 +76,6 @@ div.container-1{
     margin-top:2%;
     margin-left:1%;
 }
-
 .singup{
     margin-left:-49px;
     margin-top:70px;
@@ -96,8 +95,6 @@ div.container-1{
   margin-left:20%;
   margin-top:-10%;
 }
-
-
 .details{
     width: 100%;
   position: relative;
@@ -119,13 +116,10 @@ div.container-1{
     -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
   
 }
+
 img {
     width: 200px;
     height: auto;
-}
-.button{
-    margin-top:2%;
-    margin-left:25%;
 }
 
 
@@ -134,39 +128,41 @@ hr { width:100%; height:10px; background: #fff }
 .vl  { width:1px  size= "500"; background:rgb(143, 15, 15)}
 
 h4{
-    color:white;
+  color:white;
 }
-
 p {
-    color:white;
+  color:white;
 }
-
 li :hover {
-    /*background-color: #333;*/
-    color:white;
-    /*border-radius:20px;*/
-    
-
+  color:white;
+  /*background-color: #333;*/
+  /*border-radius:20px;*/
+}
+li {
+  float: left;
+  margin:0;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.title{
+  color:red;
 }
 
-li {
-    float: left;
-    margin:0;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  .title{
-      color:red;
-  }
-  .button{
-    /*-webkit-transition-duration: 0.7s;
-    transition-duration: 0.7s;*/
-    margin-top: 32%;
-    margin-bottom: 10%;
-    margin-left: 23%;
+
+
+.button{
+    margin-top:2%;
+    margin-left:25%;
+}
+.button{
+  /*-webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;*/
+  margin-top: 32%;
+  margin-bottom: 10%;
+  margin-left: 23%;
     background-color: rgb(68, 68, 68);
     border: grey;
     color: rgb(255, 255, 255);
@@ -190,14 +186,24 @@ label.contact{
 textarea.text{
     margin-left:0px;
 }
+.textbox{
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.2;
+
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  padding: 0 5px;
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
     transition: 0.3s;
-    
     width:35%;
-    
   }
-  
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
   }
@@ -210,75 +216,63 @@ textarea.text{
     height:475px;
     width: 350px;
 }
-  .article1{
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
-    transition: 0.3s;
- 
-    height: auto;
-  }
-  .article1:hover{
-    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
-  }
-  .article2{
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
-    transition: 0.3s;
- 
-    height: auto;
-  }
-  .article2:hover{
-    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
-  }
-  .article3{
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
-    transition: 0.3s;
- 
-    height: auto;
-  }
-  .article3:hover{
-    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
-  }
-  .article4{
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
-    transition: 0.3s;
- 
-    height: auto;
-  }
-  .article4:hover{
-    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
-  }
-  .article5{
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
-    transition: 0.3s;
- 
-    height: auto;
-  }
-  .article5:hover{
-    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
-  }
- .add1{
-     width:10%;
-     margin-left:70%;
-     margin-top:-90%;
- }
- .add2{
+.article1{
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+
+  height: auto;
+}
+.article1:hover{
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+}
+.article2{
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+
+  height: auto;
+}
+.article2:hover{
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+}
+.article3{
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+
+  height: auto;
+}
+.article3:hover{
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+}
+.article4{
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+
+  height: auto;
+}
+.article4:hover{
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+}
+.article5{
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+
+  height: auto;
+}
+.article5:hover{
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+}
+.add1{
     width:10%;
-    margin-left:85%;
-    margin-top:-40%;
- }
- .textbox{
-    font-family: Poppins-Regular;
-    font-size: 15px;
-    color: #555555;
-    line-height: 1.2;
-  
-    display: block;
-    width: 100%;
-    height: 45px;
-    background: transparent;
-    padding: 0 5px;
- }
- @media (max-width: 700px) {
-  .navbar {   
-    flex-direction: column;
-  }
+    margin-left:70%;
+    margin-top:-90%;
+}
+.add2{
+  width:10%;
+  margin-left:85%;
+  margin-top:-40%;
+}
+@media (max-width: 700px) {
+.navbar {   
+  flex-direction: column;
+}
 }
