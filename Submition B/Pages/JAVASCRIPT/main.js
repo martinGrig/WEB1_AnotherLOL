@@ -1,3 +1,18 @@
+var userLogOut = getElementById("logOut";)
+var btn = getElementById("btnSignIn");
+btn.addEventListener("click", function(){
+  var request = new XMLHttpRequest();
+  request.open('GET','')
+  request.onload = function(){
+    var user = JSON.parse(request.responseText);
+  };
+  request.send();
+});
+function showUser(){
+  userLogOut.insertAdjacentHTML('beforeend', "LogOut")
+}
+
+
 var objPeople = [
   {
     username: "sam",
