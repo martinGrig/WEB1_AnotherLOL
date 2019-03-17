@@ -2,15 +2,19 @@ function validateForm() {
   var x = document.forms["signIn"]["emailadress"].value;
   if (x == "") {
     alert("Email must be filled out");
-  
-    
   }
 }
-
 function validateForm() {
   var x = document.forms["signIn"]["password"].value;
   if (x == "") {
     alert("Password must be filled out");
+    return false;
+  }
+}
+function validateForm() {
+  var x = document.forms["singup"]["emailadress"].value;
+  if (x == "") {
+    alert("Email must be filled out");
     return false;
   }
 }
