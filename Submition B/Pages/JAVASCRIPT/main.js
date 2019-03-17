@@ -1,4 +1,44 @@
-var userLogOut = getElementById("logOut");
+function validateForm() {
+  var x = document.forms["signIn"]["emailadress"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+  
+    
+  }
+}
+
+function validateForm() {
+  var x = document.forms["signIn"]["password"].value;
+  if (x == "") {
+    alert("Password must be filled out");
+    return false;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*var userLogOut = getElementById("logOut");
 var btn = getElementById("btnSignIn");
 btn.addEventListener("click", function(){
   var request = new XMLHttpRequest();
@@ -106,4 +146,4 @@ function getInfo(){
       } 
     
       return true; 
-}</script>
+}</script> */
