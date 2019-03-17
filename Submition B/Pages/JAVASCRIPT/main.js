@@ -1,28 +1,39 @@
 function validateForm() {
   var x = document.forms["signIn"]["emailadress"].value;
+  var y = document.forms["signIn"]["password"].value;
   if (x == "") {
     alert("Email must be filled out");
-  }
-}
-function validateForm() {
-  var x = document.forms["signIn"]["password"].value;
-  if (x == "") {
+    return false;
+  }else if(y == ""){
     alert("Password must be filled out");
     return false;
   }
 }
-function validateForm() {
-  var x = document.forms["singup"]["emailadress"].value;
-  if (x == "") {
+
+function validateForm(){
+  var a = document.forms["singup"]["emailadress"].value;
+  var b = document.forms["singup"]["password"].value;
+  var c = document.forms["singup"]["password1"].value;
+  var d = document.forms["singup"]["username"].value;
+  var e = document.forms["singup"]["name"].value;
+  if (a == "") {
     alert("Email must be filled out");
     return false;
+  }else if(b == ""){
+    alert("Password must be filled out");
+    return false;
+  }else if(c == ""){
+    alert("Password must be filled out");
+    return false;
+  }else if(d == ""){
+      alert("Username must be filled out");
+      return false;
+  }else if(e == ""){
+      alert("Name must be filled out");
+      return false;
   }
+
 }
-
-
-
-
-
 
 
 
