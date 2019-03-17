@@ -11,24 +11,24 @@ function validateForm() {
 }
 
 function validateForm(){
-  var a = document.forms["singup"]["emailadress"].value;
-  var b = document.forms["singup"]["password"].value;
-  var c = document.forms["singup"]["password1"].value;
-  var d = document.forms["singup"]["username"].value;
-  var e = document.forms["singup"]["name"].value;
-  if (a == "") {
+  var emailAdress = document.forms["singup"]["emailadress"].value;
+  var password = document.forms["singup"]["password"].value;
+  var passwordRepeat = document.forms["singup"]["password1"].value;
+  var username = document.forms["singup"]["username"].value;
+  var name = document.forms["singup"]["name"].value;
+  if (emailAdress == "") {
     alert("Email must be filled out");
     return false;
-  }else if(b == ""){
+  }else if(password == ""){
     alert("Password must be filled out");
     return false;
-  }else if(c == ""){
+  }else if(passwordRepeat == ""){
     alert("Password must be filled out");
     return false;
-  }else if(d == ""){
+  }else if(username == ""){
       alert("Username must be filled out");
       return false;
-  }else if(e == ""){
+  }else if(name == ""){
       alert("Name must be filled out");
       return false;
   }
