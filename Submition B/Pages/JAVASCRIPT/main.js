@@ -1,4 +1,4 @@
-var userLogOut = getElementById("logOut";)
+var userLogOut = getElementById("logOut");
 var btn = getElementById("btnSignIn");
 btn.addEventListener("click", function(){
   var request = new XMLHttpRequest();
