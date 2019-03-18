@@ -8,6 +8,7 @@ function validateForm1() {
     alert("Password must be filled out");
     return false;
   }
+  alert("Log-In was successful");
 }
 
 function validateForm(){
