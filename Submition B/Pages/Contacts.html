@@ -3,6 +3,7 @@
     <head>
             <title class="title">ANOTHER LOL</title>
             <link rel="stylesheet"  type="text/css" href="CSS/style.css">
+            <script src="JAVASCRIPT/main.js"></script>
            
     </head>
 
@@ -39,17 +40,17 @@
                 <label class="contact">Phone Number:123 456 789</p>
                 <br>
                     <div>
-                        <form name="contactForm" action="/" method="POST">
+                        <form name="contactForm" action="index.html" method="POST" onsubmit="return validateForm2()">
                             <label class="contact">Name</label>
                             <input class="textbox" type="text" name="Name" placeholder="Enter Name">
                             <br>
                             <label class="contact">Email</label>
-                            <input class="textbox" type="email" name="e-mail" placeholder="Enter e-mail">
+                            <input id="username" class="textbox" type="email" name="emailadress" placeholder = "Enter e-mail"/>
                             <br>
                             <label class="contact">Message</label>
                             <textarea class="textbox" name="message" id="" cols="30" rows="10" 
                             placeholder="Add a message"></textarea>
-                            <button class="button" type="button">Send</button>
+                            <button class="button" type="submit">Send</button>
                         </form>
                     </div>
                 </div>

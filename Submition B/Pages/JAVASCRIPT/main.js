@@ -35,3 +35,22 @@ function validateForm(){
   }
 
 }
+<<<<<<< HEAD
+=======
+function validateForm2() {
+  var x = document.forms["contactForm"]["Name"].value;
+  var y = document.forms["contactForm"]["emailadress"].value;
+  var z = document.forms["contactForm"]["message"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }else if(y == ""){
+    alert("Email must be filled out");
+    return false;
+  }else if (z == ""){
+    alert("Message must be filled out");
+    return false;
+  }
+  
+}
+>>>>>>> 5cf12a99d39325731d53ccaabbaaaac915c4f721
