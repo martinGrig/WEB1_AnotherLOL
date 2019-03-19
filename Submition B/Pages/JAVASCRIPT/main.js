@@ -1,16 +1,3 @@
-function validateForm1() {
-  var x = document.forms["signIn"]["emailadress"].value;
-  var y = document.forms["signIn"]["password"].value;
-  if (x == "") {
-    alert("Email must be filled out");
-    return false;
-  }else if(y == ""){
-    alert("Password must be filled out");
-    return false;
-  }
-  alert("Log-In was successful");
-}
-
 function validateForm(){
   var emailAdress = document.forms["singup"]["emailadress"].value;
   var password = document.forms["singup"]["password"].value;
@@ -35,8 +22,21 @@ function validateForm(){
   }
 
 }
-<<<<<<< HEAD
-=======
+
+function validateForm1() {
+  var x = document.forms["signIn"]["emailadress"].value;
+  var y = document.forms["signIn"]["password"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }else if(y == ""){
+    alert("Password must be filled out");
+    return false;
+  }
+  alert("Log-In was successful");
+}
+
+
 function validateForm2() {
   var x = document.forms["contactForm"]["Name"].value;
   var y = document.forms["contactForm"]["emailadress"].value;
@@ -53,4 +53,3 @@ function validateForm2() {
   }
   
 }
->>>>>>> 5cf12a99d39325731d53ccaabbaaaac915c4f721
