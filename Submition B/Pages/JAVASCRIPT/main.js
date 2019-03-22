@@ -19,7 +19,10 @@ function validateForm(){
   }else if(name == ""){
       alert("Name must be filled out");
       return false;
-  }
+  }else if (password != passwordRepeat) {
+    alert("Passwords are not maching!")
+    return false;
+}
 
 }
 
