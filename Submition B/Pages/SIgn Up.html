@@ -20,7 +20,6 @@
          </ul>
 
     <img class="profpic" src="IMAGES/UnknownUser.png" alt = "User's profile picture">
-    <h4 class="LogOut"><a href = "SignIn.html">Log out</a></h4>
     <h4 class="singin"><a href = "SignIn.html">Sign in</a></h4>
     <h4 class="singup"><a href = "Sign Up.html">Sign up</a></h4>
         </div>
@@ -36,7 +35,7 @@
             <h4><a href = "CarRelated.html">Cars</a></h4>
         </div>
         <div class = "details">
-            <form name="singup"  action="backEnd.php" method="POST" onsubmit="return validateForm()">
+            <form name="singup"  action="inc.php/signup.php" method="POST" onsubmit="return validateForm()">
                 <p></p>
                 <label class="contact">E-mail:</p>
                 <input class="textbox" type= "email" name= "emailadress" placeholder = "Enter e-mail"/>
@@ -52,7 +51,7 @@
                 <p></p>
                 <label class="contact">Full Name:</p>
                 <input class="textbox" type= "text" name= "name" placeholder="Enter FullName"/>
-                <button class="button" type="submit">Create account</button>
+                <button class="button" type="submit" name="signupsubmit">Create account</button>
             </form>
             </div>
         
