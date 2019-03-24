@@ -20,15 +20,15 @@ if(isset($_POST['signupsubmit'])){
     }
     else{
         $sql = "SELECT username from user where username=?";
-        $stmt = mysql_stmt_init($conn);
-        if(!mysql_stmt_prepare($stmt, $sql)){
+        $stmt = mysqli_stmt_init($conn);
+        if(!mysqli_stmt_prepare($stmt, $sql)){
             header("Location: ../signup.php?error=sqlerror");
         exit();
         }
         else{
-            mysql_stmt_bind_param($stmt, "s", $username);
-            mysql_stmt_execute($stmt);
-            mysql_stmt_store_result($stmt);
+            mysqli_stmt_bind_param($stmt, "s", $username);
+            mysqli_stmt_execute($stmt);
+            mysqli_stmt_store_result($stmt);
             $resultCheck = mysql_stmt_num_rows($stmt);
             if($resultCheck > 0){
                 header("Location: ../signup.php?error=userTaken&email=".$email);
@@ -36,15 +36,15 @@ if(isset($_POST['signupsubmit'])){
             }
             else{
                 $sql = "INSERT INTO user (username, email, pwd) VALUES (?, ?, ?)";
-                $stmt = mysql_stmt_init($conn);
-                if(!mysql_stmt_prepare($stmt, $sql)){
+                $stmt = mysqli_stmt_init($conn);
+                if(!mysqli_stmt_prepare($stmt, $sql)){
                     header("Location: ../signup.php?error=sqlerror");
                 exit();
                 }
                 else{
                     $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
-                    mysql_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
-                    mysql_stmt_execute($stmt);
+                    mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
+                    mysqli_stmt_execute($stmt);
                     header("Location: ../signup.php?signup=success");
                     exit();
                 }
@@ -52,8 +52,8 @@ if(isset($_POST['signupsubmit'])){
             }
         }
     }
-    mysql_stmt_close($stmt);
-    mysql_close($conn);
+    mysqli_stmt_close($stmt);
+    mysqli_close($conn);
 }
 else{
     header("Location: ../signup.php");
