@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title class="title">ANOTHER LOL</title>
+            <link rel="stylesheet"  type="text/css" href="CSS/style.css">
+           
+    </head>
+
+    <body>
+        <div class="container-1">
+        <a href = "index.html"><img class="logo1" src = "IMAGES/logo.png" alt = "logo"></a>
+        <p><a href = "index.html">ANOTHERLOL</a></p>
+        
+        <ul class="titles">
+            <li><h3><a href = "ArticlesPage.html">ARTICLES</a></h3></li>
+            <li><h3><a href = "NewMemes.html">NEW MEMES</a></h3></li>
+            <li><h3><a href = "MerchPage.html">MERCH</a></h3></li>
+            <li><h3><a href = "Contacts.html">CONTACT</a></h3></li>
+         </ul>
+     
+         <img class="profpic" src="IMAGES/UnknownUser.png" alt = "User's profile picture">
+         <h4 class="singin"><a href = "SignIn.html">Sign in</a></h4>
+         <h4 class="singup"><a href = "Sign Up.html">Sign up</a></h4>
+             </div>
+     
+     
+     
+         <div class="lqvo">
+             
+             <h4><a href = "OldMemes_Page.html">Old</a></h4>
+             <h4><a href = "MostLikedPage.html">Most liked</a></h4>
+             <h4><a href = "People.html">People</a></h4>
+             <h4><a href = "Animal.html">Animals related</a></h4>
+             <h4><a href = "CarRelated.html">Cars</a></h4>
+         </div>
+       
+        <div class = "content">
+                <h4>Merch Page:</h4>
+                <img src = "IMAGES/WhiteT.png" alt = "White T-shirt">
+                <p>15.00</p>
+                <img src = "IMAGES/BlueMug.png" alt = "Blue Mug">
+                <p>15.00</p>
+                <img src = "IMAGES/GreenT.png" alt = "Green T-shirt">
+                <p>15.00</p>
+                <img src = "IMAGES/RedMug.png" alt = "Red Mug">
+                <p>15.00</p>
+        </div>
+        <footer>
+                <p  class="footer">
+                        If you like our content there is a way to support our enterprise. 
+                        You guesed it. You can buy a T-shirt or a mug, which will showus that
+                        you guys like what we are doing and we will keep uploading the amazing
+                        content you subscribed for! The way to buy something from us is via our contact form.
+                </p>
+                    
+        </footer>
+    </body>
+</html>
