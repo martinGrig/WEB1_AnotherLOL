@@ -29,7 +29,7 @@ if(isset($_POST['signupsubmit'])){
             mysqli_stmt_bind_param($stmt, "s", $username);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
-            $resultCheck = mysql_stmt_num_rows($stmt);
+            $resultCheck = mysqli_stmt_num_rows($stmt);
             if($resultCheck > 0){
                 header("Location: ../signup.php?error=userTaken&email=".$email);
                 exit();

@@ -1,5 +1,5 @@
 <?php
-require 'Submition D/signup.php';
+require 'index.php';
 ?>
 
 <main>

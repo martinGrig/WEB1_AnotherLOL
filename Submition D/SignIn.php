@@ -1,8 +1,6 @@
 <?php
-
-session_start();
+    session_start();
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -39,13 +37,13 @@ session_start();
              <h4><a href = "CarRelated.php">Cars</a></h4>
          </div>
         <div class = "details">
-            <form name="signIn" action="includes/login.inc.php" method="POST" onsubmit="return validateForm1()">
+            <form name="signIn" action="inc.php/signin.inc.php" method="POST" onsubmit="return validateForm1()">
                 <label class="contact">E-mail:</p>
                 <input id="username" class="textbox" type= "email" name="emailadress" placeholder = "Enter e-mail"/>
                 <label class="contact">Password:</p>
                 <input id="password" class="textbox" type="password" name ="password" placeholder="Enter password" />
     
-                <button class="button" id="btnSignIn"  onclick="getInfo()" type="submit">Sign In</button>
+                <button class="button" id="btnSignIn" name="signinsubmit"  type="submit">Sign In</button>
             </form>
         </div>
     </body>

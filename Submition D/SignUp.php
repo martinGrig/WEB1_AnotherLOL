@@ -1,11 +1,3 @@
-<?php
-
-session_start();
-
-?>
-
-
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -43,24 +35,23 @@ session_start();
             <h4><a href = "CarRelated.php">Cars</a></h4>
         </div>
         <div class = "details">
-            <form name="singup"  action="includes/signup.inc.php" method="POST" onsubmit="return validateForm()">
+            <form name="singup"  action="inc.php/signup.inc.php" method="POST" onsubmit="return validateForm()">
                 <p></p>
                 <label class="contact">E-mail:</p>
-                <input class="textbox" type= "email" name= "email" placeholder = "Enter e-mail"/>
+                <input class="textbox" type= "email" name= "emailadress" placeholder = "Enter e-mail"/>
                 <p></p>
                 <label class="contact">Password:</p>
-                <input class="textbox" type="password"  name = "pwd" placeholder="Create password" />
+                <input class="textbox" type="password"  name = "password" placeholder="Create password" />
                 <p></p>
                 <label class="contact">Repeat password:</p>
                 <input class="textbox"type="password"  name ="password1" placeholder="Repeat password"/>
                 <p></p>
                 <label class="contact"> Username:</p>
-                <input class="textbox" type= "text" name= "uid
-                " placeholder="Username"/>
+                <input class="textbox" type= "text" name= "username" placeholder="Username"/>
                 <p></p>
                 <label class="contact">Full Name:</p>
                 <input class="textbox" type= "text" name= "name" placeholder="Enter FullName"/>
-                <button class="button" type="submit" name="submit">Create account</button>
+                <button class="button" type="submit" name="signupsubmit">Create account</button>
             </form>
             </div>
         
