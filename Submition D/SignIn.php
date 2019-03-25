@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,7 +39,7 @@
              <h4><a href = "CarRelated.php">Cars</a></h4>
          </div>
         <div class = "details">
-            <form name="signIn" action="index.html" method="GET" onsubmit="return validateForm1()">
+            <form name="signIn" action="includes/login.inc.php" method="POST" onsubmit="return validateForm1()">
                 <label class="contact">E-mail:</p>
                 <input id="username" class="textbox" type= "email" name="emailadress" placeholder = "Enter e-mail"/>
                 <label class="contact">Password:</p>
