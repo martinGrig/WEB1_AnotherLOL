@@ -1,6 +1,7 @@
 <?php
     session_start();
 ?>
+<?php// include 'inc.php/signin.inc.php'?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -41,7 +42,7 @@
                 <label class="contact">E-mail:</p>
                 <input id="username" class="textbox" type= "email" name="emailadress" placeholder = "Enter e-mail"/>
                 <label class="contact">Password:</p>
-                <input id="password" class="textbox" type="password" name ="password" placeholder="Enter password" />
+                <input id="password" class="textbox" type="password" name ="pwdlogin" placeholder="Enter password" />
     
                 <button class="button" id="btnSignIn" name="signinsubmit"  type="submit">Sign In</button>
             </form>

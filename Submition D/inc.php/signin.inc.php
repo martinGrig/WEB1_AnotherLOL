@@ -1,20 +1,27 @@
-<?php
+/*
 
+if(_SERVER['REQUEST_METHOD'] == 'POST'){
+    //username and password send from form
+
+    $myusername = mysqli_real_escape_string($dB, $_POST)
+}
+*/
+<?php
 if(isset($_POST['signinsubmit'])){
     require 'dbh.inc.php';
 
     $emailsignin = $_POST['emailadress'];
-    $password = $_POST['password'];
+    $password = $_POST['pwdlogin'];
 
-    if(empty($mailuid) || empty($password)){
-        header("Location: ../index.php?error=emptyfields");
+    if(empty($emailsignin) || empty($password)){
+        header("Location: ../SignIn.php?error=emptyfields");
         exit();
     }
     else{
         $sql = "SELECT * FROM user WHERE email=?;";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)){
-            header("Location: ../index.php?error=sqlerror");
+            header("Location: ../SignIn.php?error=sqlerror");
             exit();
         }
         else{
@@ -24,7 +31,7 @@ if(isset($_POST['signinsubmit'])){
             if($row = mysqli_fetch_assoc($result)){
                 $pwdCheck = password_verify($password, $row['password']);
                 if($pwdCheck == false){
-                    header("Location: ../index.php?error=wrongpwd");
+                    header("Location: ../SignIn.php?error=wrongpwd");
                     exit();
                 }
                 elseif($pwdCheck == true){
@@ -36,12 +43,12 @@ if(isset($_POST['signinsubmit'])){
                     exit();
                 }
                 else{
-                    header("Location: ../index.php?error=wrongpwd");
+                    header("Location: ../SignIn.php?error=wrongpwd");
                     exit();
                 }
             }
             else{
-                header("Location: ../index.php?error=nouser");
+                header("Location: ../SignIn.php?error=nouser");
                 exit();
             }
         }
