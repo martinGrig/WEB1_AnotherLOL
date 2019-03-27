@@ -6,7 +6,7 @@
     <head>
             <title class="title">ANOTHER LOL</title>
             <link rel="stylesheet"  type="text/css" href="CSS/style.css">
-            <script src="JAVASCRIPT/main.js"></script>
+           
     </head>
 
     <body>
@@ -20,8 +20,8 @@
             <li><h3><a href = "MerchPage.php">MERCH</a></h3></li>
             <li><h3><a href = "Contacts.php">CONTACT</a></h3></li>
          </ul>
-     
-         <img class="profpic" src="IMAGES/UnknownUser.png" alt = "User's profile picture">
+        <!--  <a href = "Profile.html"> -->
+        <img class="profpic" src="IMAGES/UnknownUser.png" alt = "User's profile picture">
          <?php
               if(isset($_SESSION['username']))
               {
@@ -46,26 +46,26 @@
              <h4><a href = "Animal.php">Animals related</a></h4>
              <h4><a href = "CarRelated.php">Cars</a></h4>
          </div>
-       
-        <div class = "details">
+         <div class = "details">
+            <form name="singup"  action="inc.php/signout.inc.php" method="POST">
+                <label class="contact">Our Contacts:</p>
                 <label class="contact">E-mail:another_lol@gmail.com</p>
                 <label class="contact">Phone Number:123 456 789</p>
-                <br>
-                    <div>
-                        <form name="contactForm" action="inc.php/message.inc.php" method="POST" onsubmit="return validateForm2()">
-                            <label class="contact">Name</label>
-                            <input class="textbox" type="text" name="name" placeholder="Enter Name">
-                            <br>
-                            <label class="contact">Email</label>
-                            <input id="username" class="textbox" type="email" name="emailadress" placeholder = "Enter e-mail"/>
-                            <br>
-                            <label class="contact">Message</label>
-                            <textarea class="textbox" name="message" id="" cols="30" rows="10" 
-                            placeholder="Add a message"></textarea>
-                            <button class="button" type="submit" name="contactsubmit">Send</button>
-                        </form>
-                    </div>
-                </div>
+                <br/>
+                <br/>
+                <label class="contact">Your Username:</p>
+                <br/>
+                <label class="contact">Username:</p>
+                <?php
+                    echo '<input type="text" readonly="readonly" value="'.$_SESSION["username"].'" />';
+                ?>
+                <br/>
+
+                <button class="button" type="submit" name="logoutsubmit">Log Out</button>
+            </form>
+        </div>
+        
+       
         
     </body>
 </html>

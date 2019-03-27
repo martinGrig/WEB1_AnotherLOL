@@ -36,9 +36,9 @@ if(isset($_POST['contactsubmit'])){
                 exit();
                 }
                 else{
-                    mysqli_stmt_bind_param($stmt, "sss", $username, $email, $message);
+                    mysqli_stmt_bind_param($stmt, "sss", $name, $email, $message);
                     mysqli_stmt_execute($stmt);
-                    header("Location: ../Contacts.php?message=success");
+                    header("Location: ../index.php?message=success");
                     exit();
                 }
 

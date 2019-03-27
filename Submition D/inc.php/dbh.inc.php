@@ -1,8 +1,8 @@
 <?php
 
-$servername = "i400678.hera.fhict.nl";
-$dBUsername = "root";
-$dBPassword = "";
+$servername = "studmysql01.fhict.local";
+$dBUsername = "dbi400678";
+$dBPassword = "Password";
 $dBName = "dbi400678";
 
 $conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);

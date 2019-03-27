@@ -7,7 +7,7 @@
     <head>
             <title class="title">ANOTHER LOL</title>
             <link rel="stylesheet"  type="text/css" href="CSS/style.css">
-           <script src="JAVASCRIPT/main.js"></script>
+            <script src="JAVASCRIPT/main.js"></script>
     </head>
 
     <body>
@@ -39,8 +39,15 @@
          </div>
         <div class = "details">
             <form name="signIn" action="inc.php/signin.inc.php" method="POST" onsubmit="return validateForm1()">
-                <label class="contact">E-mail:</p>
-                <input id="username" class="textbox" type= "email" name="emailadress" placeholder = "Enter e-mail"/>
+                <?php
+                    if(isset($_GET['error'])){
+                        if(($_GET['error']) == "nouser"){
+                            echo '<label class="contact">Wrong username or password</p>';
+                        }
+                    }
+                ?>
+                <label class="contact">Username:</p>
+                <input id="username" class="textbox" type= "text" name="username" placeholder = "Enter username"/>
                 <label class="contact">Password:</p>
                 <input id="password" class="textbox" type="password" name ="pwdlogin" placeholder="Enter password" />
     

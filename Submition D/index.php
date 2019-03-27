@@ -20,10 +20,24 @@
             <li><h3><a href = "MerchPage.php">MERCH</a></h3></li>
             <li><h3><a href = "Contacts.php">CONTACT</a></h3></li>
          </ul>
-     
-         <img class="profpic" src="IMAGES/UnknownUser.png" alt = "User's profile picture">
+
+        <img class="profpic" src="IMAGES/UnknownUser.png" alt = "User's profile picture">
+         <?php
+              if(isset($_SESSION['username']))
+              {
+                echo '<a href="inc.php/signout.inc.php" method="post" class="singin">Log out</a>';
+                echo '<a href="Profile.php" class="singup" method="post">'.$_SESSION["username"].'</a>';
+              }
+              else 
+              { 
+                echo '<a href="SignIn.php" method="post" class="singin">Sign In</a>';
+                echo '<a href="SignUp.php" class="singup"  method="post">Sign Up</a>';
+              }
+          ?>
+          
+         <!--
          <h4 class="singin"><a href = "SignIn.php">Sign in</a></h4>
-         <h4 class="singup"><a href = "SignUp.php">Sign up</a></h4>
+         <h4 class="singup"><a href = "SignUp.php">Sign up</a></h4>-->
              </div>
      
      

@@ -45,6 +45,8 @@ if(isset($_POST['signupsubmit'])){
                     //$hashedPwd = password_hash($password, PASSWORD_DEFAULT);
                     mysqli_stmt_bind_param($stmt, "sss", $username, $email, $password);
                     mysqli_stmt_execute($stmt);
+                    session_start();
+                    $_SESSION['username']= $username;
                     header("Location: ../index.php?signup=success");
                     exit();
                 }
