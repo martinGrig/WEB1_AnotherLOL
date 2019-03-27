@@ -39,17 +39,17 @@
                 <label class="contact">Phone Number:123 456 789</p>
                 <br>
                     <div>
-                        <form name="contactForm" action="index.html" method="POST" onsubmit="return validateForm2()">
+                        <form name="contactForm" action="inc.php/message.inc.php" method="POST" onsubmit="return validateForm2()">
                             <label class="contact">Name</label>
-                            <input class="textbox" type="text" name="Name" placeholder="Enter Name">
+                            <input class="textbox" type="text" name="name" placeholder="Enter Name">
                             <br>
                             <label class="contact">Email</label>
                             <input id="username" class="textbox" type="email" name="emailadress" placeholder = "Enter e-mail"/>
                             <br>
                             <label class="contact">Message</label>
-                            <textarea class="textbox" name="message" id="" cols="30" rows="10" 
-                            placeholder="Add a message"></textarea>
-                            <button class="button" type="submit">Send</button>
+                            <textarea class="textbox" name="message" id="" cols="30" rows="10" placeholder="Add a message"></textarea>
+                            
+                            <button class="button" type="submit" name="contactsubmit">Send</button>
                         </form>
                     </div>
                 </div>

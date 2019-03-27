@@ -5,8 +5,8 @@ if(isset($_POST['signupsubmit'])){
 
     $username = $_POST['username'];
     $email = $_POST['emailadress'];
-    $password = $_POST['password'];
-    $passwordRepeat = $_POST['password1'];
+    $password = md5(mysqli_real_escape_string($conn, $_POST['password']));
+    $passwordRepeat = md5(mysqli_real_escape_string($conn, $_POST['password1']));
     $name = $_POST['name'];
 
 
@@ -42,10 +42,10 @@ if(isset($_POST['signupsubmit'])){
                 exit();
                 }
                 else{
-                    $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
-                    mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
+                    //$hashedPwd = password_hash($password, PASSWORD_DEFAULT);
+                    mysqli_stmt_bind_param($stmt, "sss", $username, $email, $password);
                     mysqli_stmt_execute($stmt);
-                    header("Location: ../signup.php?signup=success");
+                    header("Location: ../index.php?signup=success");
                     exit();
                 }
 
@@ -56,7 +56,7 @@ if(isset($_POST['signupsubmit'])){
     mysqli_close($conn);
 }
 else{
-    header("Location: ../signup.php");
+    header("Location: ../index.php");
     exit();
 }
 ?>

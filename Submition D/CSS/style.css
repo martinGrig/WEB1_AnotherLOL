@@ -10,25 +10,27 @@ a
     color: rgb(240, 240, 140);
 }
 /*
+    We did not manege to make it work!
 nav{
     margin-left:15%;
     margin-top:auto;
-}
-*/
-@media screen and (max-width: 600px){
+  }
+  */
+  /*background-image: url("background.png");
+  @media screen and (max-width: 600px){
     body{
-        background-image: linear-gradient(to bottom right, black , rgb(63, 63, 63));
-        /*background-image: url("background.png");*/
-        background-repeat: no-repeat;
+      background-image: linear-gradient(to bottom right, black , rgb(63, 63, 63));
+      background-repeat: no-repeat;
     }
-}
-@media screen and (max-width: 600px) {
+  }
+  @media screen and (max-width: 600px) {
     .titles a:not(:first-child) {display: none;}
     .logo1 a.icon {
       float: right;
       display: block;
     }
   }
+  */
 .container-1{
   display: flex;
 }
