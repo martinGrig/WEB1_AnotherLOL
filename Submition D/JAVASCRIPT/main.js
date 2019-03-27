@@ -7,22 +7,31 @@ function validateForm(){
   if (emailAdress == "") {
     alert("Email must be filled out");
     return false;
-  }else if(password == ""){
+  }
+  else if(password == ""){
     alert("Password must be filled out");
     return false;
-  }else if(passwordRepeat == ""){
+  }
+  else if(passwordRepeat == ""){
     alert("Password must be filled out");
     return false;
-  }else if(username == ""){
+  }
+  else if(username == ""){
       alert("Username must be filled out");
       return false;
-  }else if(name == ""){
+  }
+  else if(name == ""){
       alert("Name must be filled out");
       return false;
-  }else if (password != passwordRepeat) {
+  }
+  else if (password != passwordRepeat) {
     alert("Passwords are not maching!")
     return false;
-}
+  }
+  else{
+    alert("Registration was complete");
+    return true;
+  }
 
 }
 
@@ -50,12 +59,18 @@ function validateForm2() {
   if (x == "") {
     alert("Name must be filled out");
     return false;
-  }else if(y == ""){
+  }
+  else if(y == ""){
     alert("Email must be filled out");
     return false;
-  }else if (z == ""){
+  }
+  else if (z == ""){
     alert("Message must be filled out");
     return false;
+  }
+  else{
+    alert("Message was sent");
+    return true;
   }
   
 }
