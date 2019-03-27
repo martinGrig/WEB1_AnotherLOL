@@ -3,7 +3,7 @@
     <head>
             <title class="title">ANOTHER LOL</title>
             <link rel="stylesheet"  type="text/css" href="CSS/style.css">
-           
+            <script src="JAVASCRIPT/main.js"></script>
     </head>
 
     <body>

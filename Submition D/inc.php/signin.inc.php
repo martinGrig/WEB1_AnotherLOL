@@ -10,7 +10,8 @@ if(isset($_POST['signinsubmit'])){
     if($result = $conn->query($sql)) {
       if($result->num_rows > 0) {
         $_SESSION['email']= $emailsignin;
-        header("Location: ../index.php?signin=success");
+        $_SESSION['userislogedin']= true;
+        header("Location: ../ProfilePage.php?signin=success");
         exit();
       } else {
         echo "non-existent";
