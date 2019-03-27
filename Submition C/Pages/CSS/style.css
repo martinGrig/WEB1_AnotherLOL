@@ -81,7 +81,14 @@ div.container-1{
     margin-left:10px;
 }
 
-
+.profile
+{
+  position: relative;
+  margin-bottom: 37px;
+  margin-left:20%;
+  margin-top:-10%;
+  padding: 77px 55px 33px 55px;
+}
 .content{
   
   position: relative;
